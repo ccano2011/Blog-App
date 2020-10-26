@@ -1,6 +1,10 @@
-
-import React from 'react'
-import Home from './screens/Home/Home'
+import React from 'react';
+import './App.css';
+import Home from './screens/Home/Home';
+import Posts from './screens/Posts/Posts';
+import PostCreate from './screens/PostCreate/PostCreate';
+import PostDetail from './screens/PostDetail/PostDetail';
+import PostEdit from './screens/PostEdit/PostEdit'
 import { Route, Switch } from 'react-router-dom'
 
 
@@ -9,6 +13,10 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/posts' component={Posts} />
+        <Route exact path='add-post' component={PostCreate} />
+        <Route exact path ='/posts/:id' component={PostDetail} />
+        <Route exact path='/posts/:id/post' component={PostEdit}/>
       </Switch>
     </div>
   );

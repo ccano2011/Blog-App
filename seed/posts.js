@@ -10,6 +10,7 @@ const main = async () => {
             {
                 "name": "Chris",
                 "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "blog": "blah blah blah blogs"
             },
         ]
     await Post.insertMany(posts)
