@@ -1,6 +1,8 @@
-import './App.css';
+
+import React from 'react'
 import Home from './screens/Home/Home'
 import { Route, Switch } from 'react-router-dom'
+
 
 function App() {
   return (
