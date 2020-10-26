@@ -8,9 +8,12 @@ const main = async () => {
     const posts =
         [
             {
-                "name": "Chris",
-                "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-            },
+              "title": "This is the first day",
+              "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+              "content": "Hello",
+              "author": "Chris"
+          },
+          
         ]
     await Post.insertMany(posts)
     console.log("Created posts!")

@@ -1,0 +1,16 @@
+.post-detail {
+  display: flex;
+  padding: 100px;
+  padding-top: 80px;
+}
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.post-detail-image {
+  width: 500px;
+  padding: 0 40px;
+}
