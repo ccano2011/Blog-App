@@ -12,9 +12,14 @@ const main = async () => {
                 "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
             },
         ]
-
     await Post.insertMany(posts)
     console.log("Created posts!")
 }
-
+//Figured it out w/ Misha. This is what was missing:
+const run = async () => {
+    await main()
+    db.close()
+}
+//-----------------------
+//Now run is defined and we're seeded!
 run()

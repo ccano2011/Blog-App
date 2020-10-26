@@ -14,7 +14,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(logger('dev'))
 
-app.use('/api', postsRoutes);
+// app.use('/api', postsRoutes);
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
