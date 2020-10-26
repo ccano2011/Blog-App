@@ -3,11 +3,14 @@ import './Layout.css'
 import Nav from '../Nav/Nav'
 
 
-const Layout = () => {
+const Layout = (props) => (
+    <div className='layout'>
 
-    return (
-    <div>
         <Nav />
+        <div className="layout-children">
+            {props.children}
+        </div>
+        <Footer />
     </div>
     )
 }
