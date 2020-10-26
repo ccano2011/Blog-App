@@ -1,7 +1,6 @@
 import React from 'react'
 import './Layout.css'
 import Nav from '../Nav/Nav'
-
 import Footer from '../Footer/Footer'
 
 
@@ -14,5 +13,4 @@ const Layout = (props) => (
         <Footer />
     </div>
 )
-
 export default Layout
