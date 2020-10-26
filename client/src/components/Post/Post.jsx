@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './Post.css';
 import { Link } from 'react-router-dom'
 
@@ -12,6 +13,4 @@ const Post = (props) => {
             </Link>
         </>
     )
-}
-
 export default Post
