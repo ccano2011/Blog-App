@@ -7,9 +7,9 @@ function Home() {
   return (
     <Layout>
       <div className="homepage">
-       <PostCard/>
+        <PostCards />
       </div>
     </Layout>
-)  
+  )
 }
 export default Home;
