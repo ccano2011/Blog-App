@@ -1,31 +1,31 @@
-import React, { useState, useEffect } from "react";
-import "./Posts.css";
+import React, {useState, useEffect} from 'react';
 import Search from "../../components/Search/Search";
+import Layout from '../../components/shared/Layout/Layout';
+import PostCards from "../../components/PostCards/PostCards";
 import Post from "../../components/Post/Post";
-import Layout from "../../components/shared/Layout/Layout";
-import { getPosts } from "../../services/posts";
+import "./Posts.css";
+import { getPosts } from '../../services/posts';
 
 function Posts(props) {
-  const [allPosts, setAllPosts] = useState([]);
-  const [queriedPosts, setQueriedPosts] = useState([]);
 
+  const [allPosts, setAllPosts] = useState([])
+  const [queriedPosts, setQueriedPosts] = useState([])
+  
   useEffect(() => {
     const fetchPosts = async () => {
-      const posts = await getPosts();
-      setAllPosts(posts);
-      setQueriedPosts(posts);
-    };
-    fetchPosts();
-  }, []);
+      const posts = await getPosts()
+      setAllPosts(posts)
+      setQueriedPosts(posts)
+    }
+    fetchPosts()
+  }, [])
 
-  const handleSearch = (e) => {
-    const newQueriedPosts = allPosts.filter((post) =>
-      post.name.toLowerCase().includes(e.target.value.toLowerCase())
-    );
-    setQueriedPosts(newQueriedPosts);
-  };
+  const handleSearch = event => {
+    const newQueriedPosts = allPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
+    setQueriedPosts(newQueriedPosts)
+  }
 
-  const handleSubmit = (e) => e.preventDefault();
+  const handleSubmit = event => event.preventDefault()
 
   const postsJSX = queriedPosts.map((post, index) => (
     <Post
@@ -40,6 +40,10 @@ function Posts(props) {
   console.log(postsJSX);
   return (
     <Layout>
+      <div>     
+        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+          <PostCards/>
+      </div>
       <div>
         <h1>Hello World</h1>
         <div className="posts">{postsJSX}</div>

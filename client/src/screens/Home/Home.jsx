@@ -6,9 +6,10 @@ import PostCards from "../../components/PostCards/PostCards";
 function Home() {
   return (
     <Layout>
-      <div className="homepage"></div>
-      <PostCards />
+      <div className="homepage">
+       <PostCard/>
+      </div>
     </Layout>
-  );
+)  
 }
 export default Home;
