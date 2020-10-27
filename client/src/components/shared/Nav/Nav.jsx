@@ -1,20 +1,22 @@
 
-import React from 'react'
-import './Nav.css'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import './Nav.css';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
 
     return (
         <nav>
-            <div className="nav">
-                <NavLink className="logo" to="/">PostApp</NavLink>
-                <div className="links">
-                    <NavLink className="link" to="/posts">Posts</NavLink>
-                    <NavLink className="link" to="/add-post">Add Post</NavLink>
+            <div className="header">
+                <div className='logo'>
+                <NavLink className='header-logo' to='/'>Blog App</NavLink>
+                </div>
+                <div className='blog-links'>
+                    <NavLink className="link" to="/posts">View All Blogs</NavLink>
+                    <NavLink className="link" to="/add-post">Create Blog</NavLink>
                 </div>
             </div>
-        </nav>
+       </nav>
     )
 }
 
