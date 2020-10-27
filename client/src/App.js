@@ -16,7 +16,7 @@ function App() {
         <Route exact path='/posts' component={Posts} />
         <Route exact path='add-post' component={PostCreate} />
         <Route exact path ='/posts/:id' component={PostDetail} />
-        <Route exact path='/posts/:id/post' component={PostEdit}/>
+        <Route exact path='/posts/:id/edit' component={PostEdit}/>
       </Switch>
     </div>
   );

@@ -5,7 +5,8 @@ import Layout from '../../components/shared/Layout/Layout'
 const PostCreate = () => {
     const [post, setPost] = useState({
             title: '',
-            post: '',
+            imgURL: '',
+            content: '',
             author: ''
     })
 

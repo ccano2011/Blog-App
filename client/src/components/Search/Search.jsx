@@ -5,7 +5,8 @@ const Search = () => {
   
     return (
         <form>
-            <input >/</input>
+            <input >
+            </input>
         </form>
     )
 }
