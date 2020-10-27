@@ -8,12 +8,12 @@ const main = async () => {
     const posts =
         [
             {
-              "title": "This is the first day",
-              "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-              "content": "Hello",
-              "author": "Chris"
-          }, 
-          {
+                "title": "This is the first day",
+                "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+                "content": "Hello",
+                "author": "Chris"
+            },
+            {
                 "title": "Testing testing TESTING",
                 "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
                 "content": "is this the Krusty Krab?",

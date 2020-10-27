@@ -11,4 +11,5 @@ const Post = (props) => {
         </Link>
     )
 }
+
 export default Post

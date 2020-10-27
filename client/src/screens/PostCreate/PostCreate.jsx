@@ -7,8 +7,13 @@ import { createPost } from '../../services/posts'
 const PostCreate = () => {
     const [post, setPost] = useState({
         title: '',
+<<<<<<< .merge_file_YmbDre
         imgURL: '',
         content: '',
+=======
+        imageURL: '',
+        post: '',
+>>>>>>> .merge_file_6Om2BH
         author: ''
     })
 
@@ -16,8 +21,13 @@ const PostCreate = () => {
 
     const handleSumbit = async (e) => {
         e.preventDefault()
+<<<<<<< .merge_file_YmbDre
         const response = await createPost(post)
         setCreated(true)
+=======
+        const created = await createPost(post)
+        setCreated({ created })
+>>>>>>> .merge_file_6Om2BH
     }
 
     const handleChange = (event) => {
@@ -33,6 +43,7 @@ const PostCreate = () => {
     }
     return (
         <Layout>
+<<<<<<< .merge_file_YmbDre
             <form className="create-form" onSubmit={handleSumbit}>
                 <input
                     className="blogTitle"
@@ -69,6 +80,9 @@ const PostCreate = () => {
                 />
                 <button type='submit' className="submit-button">Submit</button>
             </form>
+=======
+
+>>>>>>> .merge_file_6Om2BH
         </Layout>
     )
 }
