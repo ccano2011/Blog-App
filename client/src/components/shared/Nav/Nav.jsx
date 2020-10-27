@@ -12,7 +12,6 @@ const Nav = () => {
                 <NavLink className='header-logo' to='/'>Blog App</NavLink>
                 </div>
                 <div className='blog-links'>
-                    <NavLink className="link" to="/posts">View All Blogs</NavLink>
                     <NavLink className="link" to="/add-post">Create Blog</NavLink>
                 </div>
             </div>

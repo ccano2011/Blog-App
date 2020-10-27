@@ -13,7 +13,7 @@ const PostCreate = () => {
     })
     const [isCreated, setCreated] = useState(false)
 
-    const handleSumbit = async (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const response = await createPost(post)
         setCreated(true)
