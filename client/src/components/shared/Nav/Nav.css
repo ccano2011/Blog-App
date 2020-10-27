@@ -1,11 +1,47 @@
-.header {
-    border: 1px solid rgb(219, 219, 219);
-    height: 90px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.blog-links {
+    max-width: 55vw;
+    align-items: center;
+    font-size: 26px;
+    flex: 2;
+    display: flex;
+}
+
+nav {
     position: fixed;
-    width: 100%;
     z-index: 1;
-    background-color: rgb(250, 250, 250);
     top: 0px;
-    text-align: left;
-    padding-left: 180px;
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.822);
+    width: 100%;
   }
+
+.header {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 4px solid rgb(0, 61, 131);
+    max-width: 100%;
+}
+
+.header-logo {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    max-width: 35vw;
+    font-size: 55px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    margin-left: 100px;
+  }
+
+
+.link {
+  font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    max-width: 30vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
