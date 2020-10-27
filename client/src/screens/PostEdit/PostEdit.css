@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .post-edit {
-    margin-top: 150px;
+    
     display: flex;
     font-family: "Montserrat", sans-serif;
-    /* justify-content: center; */
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-edit {
@@ -69,6 +71,7 @@ p {
     font-size: 64px;
     letter-spacing: 1px;
     padding: 5px;
+    text-align: left;
 }
 /*
 

@@ -28,7 +28,7 @@ const PostCreate = () => {
     }
 
     if (isCreated) {
-        return <Redirect to={`/posts`} />
+        return <Redirect to={`/`} />
     }
     return (
         <Layout>

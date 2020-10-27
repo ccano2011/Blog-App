@@ -79,7 +79,7 @@ const PostEdit = (props) => {
                         cols={88}
                         placeholder='Blog'
                         value={post.content}
-                        name='blog'
+                        name='content'
                         onChange={handleChange}
                     />
                     <button type='submit' className='save-button'>Save Edit</button>

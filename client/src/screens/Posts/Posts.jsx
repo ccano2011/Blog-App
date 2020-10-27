@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Search from "../../components/Search/Search";
 import Layout from '../../components/shared/Layout/Layout';
 import PostCards from "../../components/PostCards/PostCards";
 import Post from "../../components/Post/Post";
@@ -19,11 +18,11 @@ function Posts(props) {
     }
     fetchPosts()
   }, [])
-  const handleSearch = event => {
-    const newQueriedPosts = allPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
-    setQueriedPosts(newQueriedPosts)
-  }
-  const handleSubmit = event => event.preventDefault()
+  // const handleSearch = event => {
+  //   const newQueriedPosts = allPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
+  //   setQueriedPosts(newQueriedPosts)
+  // }
+  // const handleSubmit = event => event.preventDefault()
   const postsJSX = queriedPosts.map((post, index) => (
     <Post
       _id={post._id}
@@ -38,7 +37,7 @@ function Posts(props) {
   return (
     <Layout>
       <div>
-        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+        {/* <Search onSubmit={handleSubmit} onChange={handleSearch} /> */}
         <PostCards />
       </div>
       {/* <div>

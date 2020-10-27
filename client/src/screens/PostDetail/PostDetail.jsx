@@ -20,7 +20,7 @@ const PostDetail = (props) => {
   }, [id])
 
   if (!isLoaded) {
-    return <Link to="/posts">Click to return</Link>
+    return <Link to="/" className="takeMeHome">Click to return</Link>
   }
 
   const handleDelete = async (id) => {
@@ -30,12 +30,12 @@ const PostDetail = (props) => {
 
   return (
     <Layout>
-      <div className="post-detail">
-        <img className="post-detail-image" src={post.imgURL} alt={post.name} />
-        <div className="detail">
-          <div className="title">{post.title}</div>
-          <div className="content">{post.content}</div>
-          <div className="author">By: {post.author}</div>
+      <div className="post-details">
+        <img className="post-detail-images" src={post.imgURL} alt={post.name} />
+        <div className="details">
+          <div className="titles">{post.title}</div>
+          <div className="contents">{post.content}</div>
+          <div className="authors">By: {post.author}</div>
           <div className="button-container">
             <button className="edit-button"><Link className="edit-link" to={`/posts/${post._id}/edit`}>Edit</Link></button>
             <button className="delete-button" onClick={() => handleDelete(id)}>Delete</button>
