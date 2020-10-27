@@ -9,7 +9,7 @@ function Posts(props) {
 
   const [allPosts, setAllPosts] = useState([])
   const [queriedPosts, setQueriedPosts] = useState([])
-
+  console.log(allPosts)
   useEffect(() => {
     const fetchPosts = async () => {
       const posts = await getPosts()
