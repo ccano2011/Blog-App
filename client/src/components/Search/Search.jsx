@@ -1,7 +1,7 @@
 import React from 'react';
 import './Search.css';
 
-const Search = () => {
+const Search = (props) => {
   
   return (
     <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
