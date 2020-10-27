@@ -16,6 +16,7 @@ function App() {
         <Route exact path="/posts/:id/edit" component={PostEdit} />
       </Switch>
     </div>
+
   );
 }
 
