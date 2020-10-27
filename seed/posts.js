@@ -8,16 +8,16 @@ const main = async () => {
     const posts =
         [
             {
-                "title": "This is the first day",
-                "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-                "content": "Hello",
+                "title": "Our first Full-Stack Group Exercise",
+                "imgURL": "https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg",
+                "content": "Getting our feet wet in what will hopefully be our jobs later in the future!",
                 "author": "Chris"
             },
             {
-                "title": "Testing testing TESTING",
-                "imgURL": "https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-                "content": "is this the Krusty Krab?",
-                "author": "NO THIS IS PATRICK!"
+                "title": "With a Great Blog....",
+                "imgURL": "https://frontburnermarketing.net/wp-content/uploads/2020/04/Blogging-for-Small-Business-Owners.jpg",
+                "content": "...comes a great Post",
+                "author": "Uncle Ben"
             },
         ]
     await Post.insertMany(posts)

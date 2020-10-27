@@ -1,16 +1,51 @@
-.post-detail {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.post-details {
   display: flex;
   padding: 100px;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
-.detail{
+.details{
   display: flex;
   flex-direction: column;
   line-height: 1.6;
 }
 
-.post-detail-image {
+.post-detail-images {
   width: 500px;
   padding: 0 40px;
+}
+
+.titles {
+  font-family: "Montserrat", sans-serif;   
+    font-size: 30px;
+    color: black; 
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.authors {
+  display: inline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;   
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: inherit;
+    color: black;
+    /* background-color: aqua; */
+  }
+
+.contents {
+  display: block;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.takeMeHome {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
