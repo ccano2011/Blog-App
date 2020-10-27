@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './PostCards.css'
 import PostCard from '../PostCard/PostCard'
 import { getPosts } from '../../services/posts'
-import PostDetail from '../../screens/PostDetail/PostDetail';
+
 
 class PostCards extends Component {
     constructor() {
