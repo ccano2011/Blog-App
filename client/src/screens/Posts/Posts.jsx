@@ -19,14 +19,11 @@ function Posts(props) {
     }
     fetchPosts()
   }, [])
-
   const handleSearch = event => {
     const newQueriedPosts = allPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
     setQueriedPosts(newQueriedPosts)
   }
-
   const handleSubmit = event => event.preventDefault()
-
   const postsJSX = queriedPosts.map((post, index) => (
     <Post
       _id={post._id}
@@ -44,9 +41,9 @@ function Posts(props) {
         <Search onSubmit={handleSubmit} onChange={handleSearch} />
         <PostCards />
       </div>
-      <div>
+      {/* <div>
         <div className="posts">{postsJSX}</div>
-      </div>
+      </div> */}
     </Layout>
   );
 }
