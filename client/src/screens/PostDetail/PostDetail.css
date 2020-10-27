@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-.post-detail {
+.post-details {
   display: flex;
   padding: 100px;
   padding-top: 150px;
 }
 
-.detail{
+.details{
   display: flex;
   flex-direction: column;
   line-height: 1.6;
 }
 
-.post-detail-image {
+.post-detail-images {
   width: 500px;
   padding: 0 40px;
 }
 
-.title {
+.titles {
   font-family: "Montserrat", sans-serif;   
     font-size: 30px;
     color: black; 
@@ -24,7 +24,7 @@
     padding: 5px;
 }
 
-.author {
+.authors {
   display: inline;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;   
@@ -33,12 +33,19 @@
     text-align: inherit;
     color: black;
     /* background-color: aqua; */
-}
+  }
 
-.content {
+.contents {
   display: block;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     max-width: 600px;
     margin-top: 30px;
+}
+
+.takeMeHome {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
