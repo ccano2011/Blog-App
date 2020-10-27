@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Search from "../../components/Search/Search";
 import Layout from '../../components/shared/Layout/Layout';
 import PostCards from "../../components/PostCards/PostCards";
@@ -10,7 +10,7 @@ function Posts(props) {
 
   const [allPosts, setAllPosts] = useState([])
   const [queriedPosts, setQueriedPosts] = useState([])
-  
+
   useEffect(() => {
     const fetchPosts = async () => {
       const posts = await getPosts()
@@ -19,14 +19,11 @@ function Posts(props) {
     }
     fetchPosts()
   }, [])
-
   const handleSearch = event => {
     const newQueriedPosts = allPosts.filter(post => post.title.toLowerCase().includes(event.target.value.toLowerCase()))
     setQueriedPosts(newQueriedPosts)
   }
-
   const handleSubmit = event => event.preventDefault()
-
   const postsJSX = queriedPosts.map((post, index) => (
     <Post
       _id={post._id}
@@ -40,14 +37,13 @@ function Posts(props) {
   console.log(postsJSX);
   return (
     <Layout>
-      <div>     
-        <Search onSubmit={handleSubmit} onChange={handleSearch} />
-          <PostCards/>
-      </div>
       <div>
-        <h1>Hello World</h1>
-        <div className="posts">{postsJSX}</div>
+        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+        <PostCards />
       </div>
+      {/* <div>
+        <div className="posts">{postsJSX}</div>
+      </div> */}
     </Layout>
   );
 }
