@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './PostCreate.css';
 import Layout from '../../components/shared/Layout/Layout'
+import Redirect from 'react-router-dom'
 
 const PostCreate = () => {
     const [post, setPost] = useState({
