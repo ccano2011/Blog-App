@@ -11,7 +11,6 @@ const PostCreate = () => {
         content: '',
         author: ''
     })
-
     const [isCreated, setCreated] = useState(false)
 
     const handleSubmit = async (e) => {
