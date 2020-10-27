@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Search from "../../components/Search/Search";
 import Layout from '../../components/shared/Layout/Layout';
 import PostCards from "../../components/PostCards/PostCards";
@@ -10,7 +10,7 @@ function Posts(props) {
 
   const [allPosts, setAllPosts] = useState([])
   const [queriedPosts, setQueriedPosts] = useState([])
-  
+
   useEffect(() => {
     const fetchPosts = async () => {
       const posts = await getPosts()
@@ -40,12 +40,11 @@ function Posts(props) {
   console.log(postsJSX);
   return (
     <Layout>
-      <div>     
+      <div>
         <Search onSubmit={handleSubmit} onChange={handleSearch} />
-          <PostCards/>
+        <PostCards />
       </div>
       <div>
-        <h1>Hello World</h1>
         <div className="posts">{postsJSX}</div>
       </div>
     </Layout>
