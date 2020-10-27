@@ -9,9 +9,6 @@ const PostCreate = () => {
         title: '',
         imgURL: '',
         content: '',
-
-        imageURL: '',
-        post: '',
         author: ''
     })
 
@@ -19,13 +16,10 @@ const PostCreate = () => {
 
     const handleSumbit = async (e) => {
         e.preventDefault()
-
         const response = await createPost(post)
         setCreated(true)
-
         const created = await createPost(post)
         setCreated({ created })
-
     }
 
     const handleChange = (event) => {

@@ -4,15 +4,15 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 
 
-const Layout = (props) => {(
-    <div className='layout'>
-
-        <Nav />
-        <div className="layout-children">
-            {props.children}
+const Layout = (props) => {
+    return (
+        <div className='layout'>
+            <Nav />
+            <div className="layout-children">
+                {props.children}
+            </div>
+            <Footer />
         </div>
-        <Footer />
-    </div>
     )
 }
 
