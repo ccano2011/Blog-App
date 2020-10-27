@@ -6,7 +6,7 @@ const Post = require('./models/post')
 const postsRoutes = require('./routes/posts');
 
 const db = require('./db/connection')
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3000
 
 const app = express();
 

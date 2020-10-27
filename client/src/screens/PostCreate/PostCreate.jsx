@@ -15,8 +15,6 @@ const PostCreate = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await createPost(post)
-        setCreated(true)
         const created = await createPost(post)
         setCreated({ created })
     }
@@ -30,11 +28,11 @@ const PostCreate = () => {
     }
 
     if (isCreated) {
-        return <Redirect to={`/posts`} />
+        return <Redirect to={`/`} />
     }
     return (
         <Layout>
-            <form className="create-form" onSubmit={handleSumbit}>
+            <form className="create-form" onSubmit={handleSubmit}>
                 <input
                     className="blogTitle"
                     placeholder='Title'
