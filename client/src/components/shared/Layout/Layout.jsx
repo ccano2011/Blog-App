@@ -4,7 +4,8 @@ import Nav from '../Nav/Nav'
 import Footer from '../Footer/Footer'
 
 
-const Layout = (props) => {(
+const Layout = (props) => {
+  return(
     <div className='layout'>
 
         <Nav />
