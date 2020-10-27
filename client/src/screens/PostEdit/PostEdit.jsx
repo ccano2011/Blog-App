@@ -16,11 +16,11 @@ const PostEdit = (props) => {
     let { id } = useParams();
 
     useEffect(() => {
-      const fetchPost = async () => {
-          const post = await getPost(id)
-          setPost(post)
-      }
-      fetchPost()
+        const fetchPost = async () => {
+            const post = await getPost(id)
+            setPost(post)
+        }
+        fetchPost()
     }, [id])
 
     const handleChange = (e) => {
@@ -33,7 +33,7 @@ const PostEdit = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let { id } = props.match.params 
+        let { id } = props.match.params
         const updated = await updatePost(id, post)
         setUpdated(updated)
     }
@@ -48,7 +48,7 @@ const PostEdit = (props) => {
                 <div className='img-area'>
                     <img className='img-edit' src={post.imgURL} alt={post.title} />
                     <form onSubmit={handleSubmit}>
-                        <input 
+                        <input
                             className='edit-img-link'
                             placeholder='Paste Image link Here'
                             value={post.imgURL}
@@ -57,29 +57,29 @@ const PostEdit = (props) => {
                         />
                     </form>
                 </div>
-                <form classname="edit-blog" onSubmit={handleSubmit}>
+                <form className="edit-blog" onSubmit={handleSubmit}>
                     <input
                         className='input-title'
-                        placeholder='title' 
+                        placeholder='title'
                         value={post.title}
                         name='title'
                         onChange={handleChange}
                     />
                     <input
                         className='input-author'
-                        placeholder='author' 
+                        placeholder='author'
                         value={post.author}
                         name='author'
                         onChange={handleChange}
                     />
                     <textarea
-                    className="blog-area"
-                    rows={15}
-                    cols={88}
-                    placeholder='Blog'
-                    value={post.content}
-                    name='blog'
-                    onChange={handleChange}
+                        className="blog-area"
+                        rows={15}
+                        cols={88}
+                        placeholder='Blog'
+                        value={post.content}
+                        name='blog'
+                        onChange={handleChange}
                     />
                     <button type='submit' className='save-button'>Save Edit</button>
                 </form>
