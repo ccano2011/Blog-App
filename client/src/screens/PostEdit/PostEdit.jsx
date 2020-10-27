@@ -55,6 +55,7 @@ const PostEdit = (props) => {
                             name='imgURL'
                             onChange={handleChange}
                         />
+                        <p className="instruct">Paste Image URL Here ^</p>
                     </form>
                 </div>
                 <form className="edit-blog" onSubmit={handleSubmit}>

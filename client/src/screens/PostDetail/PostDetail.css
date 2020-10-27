@@ -2,7 +2,7 @@
 .post-detail {
   display: flex;
   padding: 100px;
-  padding-top: 80px;
+  padding-top: 150px;
 }
 
 .detail{
@@ -14,4 +14,31 @@
 .post-detail-image {
   width: 500px;
   padding: 0 40px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;   
+    font-size: 30px;
+    color: black; 
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.author {
+  display: inline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;   
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: inherit;
+    color: black;
+    /* background-color: aqua; */
+}
+
+.content {
+  display: block;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    max-width: 600px;
+    margin-top: 30px;
 }
